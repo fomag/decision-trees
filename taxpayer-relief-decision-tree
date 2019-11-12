@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+<base href="https://www.canada.ca/">
+
+<link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="/etc/designs/canada/clientlib-all.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/wet-boew.min.css"/>
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/theme.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+<script src="//assets.adobedtm.com/caacec67651710193d2331efef325107c23a0145/satelliteLib-78cf42deb149c9766cbaaa6151e252b9b67c0200.js"></script>
+
+</head>
+
+<body>
+
+<h1>Taxpayer Relief Decision Tree</h1>
+
+<div class="wb-frmvld">
+
+<form method="get">
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+<!-- Question 1 -->	
+<p>Were there any circumstances beyond your control that prevented you from filing or paying on time?</p>
+	<ul>
+		<li>Yes
+			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+			<!-- Question 2 -->	
+		    <p>Which tax year(s) are you filing the request for?</p>
+				<ul>
+      				<li data-wb-fieldflow='{"action": "removeClass", "source": "#decision-x", "class": "mfp-hide", "live":true}'>Within 10 years?</li>
+      				<li>Greater than 10 years?
+      					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+      					<!-- Questio 3 -->
+      					<p>Does your request involve interest charges which accrued within the last 10 calendar years?</p>
+	      					<ul>
+	      						<li data-wb-fieldflow='{"action": "removeClass", "source": "#decision-x", "class": "mfp-hide", "live":true}'>Yes</li>
+	      						<li data-wb-fieldflow='{"action": "removeClass", "source": "#q3-no", "class": "mfp-hide", "live":true}'>No</li>
+	      					</ul>
+	      				</div>	
+      				</li>
+   				</ul>	
+		    </div>	
+		</li>
+		<li data-wb-fieldflow='{"action": "removeClass", "source": "#q1-no", "class": "mfp-hide", "live":true}'>No</li>
+	</ul>
+</div>
+
+</form>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script>
+<script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
+<script type="text/javascript" src="/etc/designs/canada/clientlib-publish.min.js"></script>
+
+</html>

@@ -6,13 +6,27 @@
 
 <base href="https://www.canada.ca/">
 
+<title> - Canada.ca</title>
+
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="/etc/designs/canada/clientlib-all.min.css" type="text/css">
 <link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/theme.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 <script src="//assets.adobedtm.com/caacec67651710193d2331efef325107c23a0145/satelliteLib-78cf42deb149c9766cbaaa6151e252b9b67c0200.js"></script>
-
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		
+		<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/ie8-theme.min.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="/etc/designs/canada/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<!--[if lte IE 9]>
+		
+		
+		<![endif]-->
 </head>
 
 <body>
@@ -75,14 +89,14 @@
 		<div class="container">
 			<h2 class="wb-inv">Menu</h2>
 			<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-			<ul role="menu" aria-orientation="vertical" data-ajax-replace="http://cra-ut.isvcs.net/test/uxssa/pit/en/sitemenu-v2-en.html">
+			<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/en/sitemenu-v2-en.html">
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
-				<li role="none presentation"><a role="menuitem" tabindex="-1" href="http://cra-ut.isvcs.net/test/uxssa/pit/en/services/taxes.html">Taxes</a></li>
+				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
 				<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
@@ -99,9 +113,6 @@
 <div class="container">
 <ol class="breadcrumb">
 <li><a href='/en.html'>Home</a></li>
-<li><a href="http://cra-ut.isvcs.net/test/uxssa/pit/en/services/taxes.html">Taxes</a></li>
-<li><a href="http://cra-ut.isvcs.net/test/uxssa/pit/en/services/taxes/income-tax.html">Income tax</a></li>
-<li><a href="http://cra-ut.isvcs.net/test/uxssa/pit/en/services/taxes/income-tax/personal-income-tax.html">Personal income tax</a></li>
 </ol>
 </div>
 </nav>
@@ -342,8 +353,15 @@
 <script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script>
 <script type="text/javascript" src="/etc/designs/canada/clientlib-publish.min.js"></script>
 
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/etc/designs/canada/wet-boew/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+
 <script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
-
-</body>
-
+    </body>
 </html>

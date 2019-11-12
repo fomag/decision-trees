@@ -126,18 +126,18 @@
 
 <form method="get">
 
-<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 <!-- Question 1 -->	
 <p><span class="h3">Were there any circumstances beyond your control that prevented you from filing or paying on time?</span></p>
 	<ul>
 		<li>Yes
-			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 			<!-- Question 2 -->	
 		    <p><span class="h3">Which tax year(s) are you filing the request for?</span></p>
 				<ul>
       				<li data-wb-fieldflow='{"action": "removeClass", "source": "#decision-x", "class": "mfp-hide", "live":true}'>Within 10 years?</li>
       				<li>Greater than 10 years?
-      					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+      					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
       					<!-- Questio 3 -->
       					<p><span class="h3">Does your request involve interest charges which accrued within the last 10 calendar years?</span></p>
 	      					<ul>
@@ -158,7 +158,7 @@
 </div>
 
 <!-- New tree -->
-<section id="decision-x" class="results mfp-hide">
+<section id="decision-x" class="results2 mfp-hide">
 
 <hr />
 
@@ -181,7 +181,19 @@
 		<li>I want to dispute an assessment I disagree with</li>
 		<li>I want to file a request relating to incorrect accounting, missing payments, or other issues relating to accounting</li>
 		<li>I want to ask for a relief for a penalty because my return was filed on time</li>
-		<li>My request doesn’t pertain to the situations above</li>
+		<li>My request doesn’t pertain to the situations above
+			<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
+			<p>Read the circumstances below and choose the one that applies to you</p>
+				<ul>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-a", "class": "mfp-hide", "live":true}'>Canada Revenue Agency error or Delay</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-b", "class": "mfp-hide", "live":true}'>Natural or human-made disaster</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-c", "class": "mfp-hide", "live":true}'>Death/accident/serious illness/emotional or mental distress</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-d", "class": "mfp-hide", "live":true}'>Financial hardship/inability to pay</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-e", "class": "mfp-hide", "live":true}'>Civil disturbance or disruptions in services</li>
+					<li data-wb-fieldflow='{"action": "removeClass", "source": "#q5-f", "class": "mfp-hide", "live":true}'>Other circumstance</li>
+				</ul>
+			</div>	
+		</li>
 	</ul>	
 </div>
 
@@ -198,6 +210,31 @@
 <section id="q3-no" class="results well mfp-hide">
 <p>Your request does not fall within the 10 year <a href="#">limitation period. See Limitation period on exercising discretion and the deadline for requesting relief</a> for more details</p>
 </section>
+
+<section id="q5-a" class="results well mfp-hide">
+<h3>Default Case 1</h3>
+</section>
+
+<section id="q5-b" class="results well mfp-hide">
+<h3>Default Case 2</h3>
+</section>
+
+<section id="q5-c" class="results well mfp-hide">
+<h3>Default Case 3</h3>
+</section>
+
+<section id="q5-d" class="results well mfp-hide">
+<h3>Default Case 4</h3>
+</section>
+
+<section id="q5-e" class="results well mfp-hide">
+<h3>Default Case 5</h3>
+</section>
+
+<section id="q5-f" class="results well mfp-hide">
+<h3>Default Case 6</h3>
+</section>
+
 
 <div class="pagedetails">
 <div class="row">

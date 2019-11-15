@@ -122,7 +122,7 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 
-<h1>Taxpayer Relief Decision Tree</h1>
+<h1>Taxpayer Relief Decision Tree - duplicated paths</h1>
 
 <div class="wb-frmvld">
 
@@ -138,7 +138,11 @@
 		    <p><span class="h3">Which tax year(s) are you filing the request for?</span></p>
 				<ul>
       				<li data-wb-fieldflow='{"action": "removeClass", "source": "#decision-x", "class": "mfp-hide", "live":true}'>Within 10 years?
-<!---------------------------------------------- This will be duplicated below -------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------------->      					
+<!---------------------------------------------- This next part will be duplicated below -------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------->
+
 <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 <p><span class="h3">Please read all the situations below and choose the one that applies to you</span></p>
 	<ul>
@@ -202,6 +206,11 @@
 		</li>
 	</ul>	
 </div>
+
+<!----------------------------------------------------------------------------------------------------------------------->      					
+<!---------------------------------------------- End of block------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------------->
+
       				</li>
       				<li>Greater than 10 years?
       					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results,.results2", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
@@ -209,7 +218,11 @@
       					<p><span class="h3">Does your request involve interest charges which accrued within the last 10 calendar years?</span></p>
 	      					<ul>
 	      						<li data-wb-fieldflow='{"action": "removeClass", "source": "#decision-x", "class": "mfp-hide", "live":true}'>Yes
-<!------------------------------------------ This is duplicated above --------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------------->	      							
+<!------------------------------------------------ This block is duplicated above --------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------->
+
 <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "mfp-hide"}, "noForm": true, "noreqlabel": true}'>
 <p><span class="h3">Please read all the situations below and choose the one that applies to you</span></p>
 	<ul>
@@ -273,6 +286,11 @@
 		</li>
 	</ul>	
 </div>
+
+<!----------------------------------------------------------------------------------------------------------------------->      					
+<!---------------------------------------------- End of block------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------------->
+
 	      						</li>
 	      						<li data-wb-fieldflow='{"action": "removeClass", "source": "#q3-no", "class": "mfp-hide", "live":true}'>No</li>
 	      					</ul>
